@@ -107,9 +107,15 @@ function App() {
             </button>
             {item.editOption ? (
               <div>
-                <textarea id="editTask" onChange={handleEditTask}></textarea>
+                <textarea
+                  className="editTask"
+                  onChange={handleEditTask}
+                ></textarea>
                 <br />
-                <button id="saveTask" onClick={() => handleSave(item.id)}>
+                <button
+                  className="saveTask"
+                  onClick={() => handleSave(item.id)}
+                >
                   Save
                 </button>
               </div>
